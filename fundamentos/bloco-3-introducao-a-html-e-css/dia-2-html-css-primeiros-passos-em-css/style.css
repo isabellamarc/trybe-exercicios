@@ -1,0 +1,30 @@
+h1{
+    color:orange;
+    font-size: 65px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .cores{
+    background-color:salmon;
+  }
+  p{
+    font-weight: 600px;
+    font-size: 4em;
+  }
+  body{
+    font-size: 16px;
+  }
+  li{
+    font-style: italic;
+    line-height: 40px;
+  }
+  #amarelo{
+    background-color:yellow;
+  }
+  #vermelho{
+    background-color: red;
+  }
+  #marrom{
+    background-color: brown;
+  }
