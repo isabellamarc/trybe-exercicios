@@ -90,7 +90,7 @@ for (let linha = 1; linha <= meio; linha += 1) {
 */
 
 //exercicio 6
-
+/*
 let divisores = 1;
 let numberToCheck = 31;
 
@@ -103,3 +103,4 @@ if (divisores === 2){
 } else {
   console.log(numberToCheck + ' não é primo');
 }
+*/
