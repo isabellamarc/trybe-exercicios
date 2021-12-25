@@ -1,4 +1,69 @@
-//Exercicio 1
+// 1
+let fatorial = 1;
+
+for (let index = 10; index > 0; index -= 1) {
+  fatorial *= index;
+}
+
+console.log(fatorial);
+
+// 2
+let word = 'tryber';
+let reverseWord = '';
+
+for (let index = 0; index < word.length; index += 1) {
+  reverseWord += word[word.length - 1 - index];
+}
+
+console.log(reverseWord);
+
+// ou
+let word = 'tryber';
+let reverseWord = '';
+
+reverseWord = word.split('').reverse().join('');
+
+console.log(reverseWord);
+
+// 3
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+let biggestWord = array[0];
+let smallestWord = array[0];
+
+for (let index = 0; index < array.length; index += 1) {
+  if (array[index].length > biggestWord.length) {
+    biggestWord = array[index];
+  }
+}
+
+for (let index = 0; index < array.length; index += 1) {
+  if (array[index].length < smallestWord.length) {
+    smallestWord = array[index];
+  }
+}
+
+console.log(biggestWord);
+console.log(smallestWord);
+
+// 4
+let biggestPrimeNumber = 0;
+
+for (let currentNumber = 0; currentNumber <= 50; currentNumber += 1) {
+  let isPrime = true;
+  for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+    if (currentNumber % currentDivisor === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    biggestPrimeNumber = currentNumber;
+  }
+}
+
+console.log(biggestPrimeNumber);
+
+// Exercicio 1 Bônus
 /*
 let n=5;
 let asterisco="*";
@@ -11,7 +76,7 @@ for (let i=0; i<n; i++){
 }
 */
 
-//Exercicio 2
+// Exercicio 2
 /*
 let n=5;
 let asterisco="*";
@@ -22,7 +87,7 @@ for (let i=0; i<=n; i++){
 }
 */
 
-//Exercicio 3
+// Exercicio 3
 /*
 let n=5;
 let asterisco="*";
@@ -42,7 +107,7 @@ for (let i=0; i<n; i++){
 }
 */
 
-//Exercicio 4
+// Exercicio 4
 /*
 let n=5;
 let linha="";
@@ -67,7 +132,7 @@ for (let i=0; i<=meio; i++){
 }
 */
 
-//Bonus - exercicio 5
+// exercicio 5
 /*
 let n = 7;
 let meio = (n + 1) / 2;
@@ -89,7 +154,7 @@ for (let linha = 1; linha <= meio; linha += 1) {
 }
 */
 
-//exercicio 6
+// exercicio 6
 /*
 let divisores = 1;
 let numberToCheck = 31;
